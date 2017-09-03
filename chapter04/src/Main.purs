@@ -12,8 +12,10 @@ import Data.Foldable
 
 -- 4.1 (Easy) Write a recursive function which returns true if and only if its
 -- input is an even integer.
--- Skipped. This doesn't make any sense.
-
+isEven :: Int -> Boolean
+isEven 0 = true
+isEven 1 = false
+isEven n = isEven (n - 2)
 
 -- 4.2 (Medium) Write a recursive function which counts the number of even
 -- integers in an array. Hint: use the head function from Data.Array.Unsafe.
